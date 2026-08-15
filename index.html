@@ -387,20 +387,38 @@
 </a>
 
 <script>
-  // Typewriter effect for "avanzar"
-  (function(){
-    var el = document.getElementById('typeword');
-    var word = "avanzar.";
-    var i = 0;
-    function type(){
-      if(i <= word.length){
-        el.innerHTML = word.slice(0,i) + '<span class="cursor"></span>';
-        i++;
-        setTimeout(type, 110);
-      }
+ // Typewriter effect for "avanzar" (loop con pausas largas)
+(function(){
+  var el = document.getElementById('typeword');
+  var word = "avanzar.";
+  var i = 0;
+  var typingSpeed = 110;   // velocidad al escribir (ms por letra)
+  var deletingSpeed = 60;  // velocidad al borrar (ms por letra)
+  var pauseAfterTyping = 3500; // cuánto queda la palabra completa antes de borrar
+  var pauseBeforeTyping = 1800; // cuánto queda vacío antes de volver a escribir
+
+  function type(){
+    if(i <= word.length){
+      el.innerHTML = word.slice(0,i) + '<span class="cursor"></span>';
+      i++;
+      setTimeout(type, typingSpeed);
+    } else {
+      setTimeout(erase, pauseAfterTyping);
     }
-    setTimeout(type, 400);
-  })();
+  }
+
+  function erase(){
+    if(i > 0){
+      i--;
+      el.innerHTML = word.slice(0,i) + '<span class="cursor"></span>';
+      setTimeout(erase, deletingSpeed);
+    } else {
+      setTimeout(type, pauseBeforeTyping);
+    }
+  }
+
+  setTimeout(type, 400);
+})();
 
   // Scroll reveal
   (function(){
