@@ -226,6 +226,33 @@
   .modalidad{background:var(--card-bg);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
   .modalidad p{margin:0 0 18px;color:#333A2B;}
   .modalidad p:last-child{margin-bottom:0;}
+  .steps{display:flex;align-items:flex-start;margin-top:8px;}
+.step{flex:1;text-align:center;padding:0 8px;}
+.step-num{
+  width:34px;height:34px;
+  border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  margin:0 auto 12px;
+  font-family:'Plus Jakarta Sans',sans-serif;
+  font-weight:700;
+  font-size:14px;
+}
+.step-a{background:var(--olive-soft);color:var(--olive-dark);}
+.step-b{background:var(--blue-soft);color:var(--blue);}
+.step-title{
+  font-family:'Plus Jakarta Sans',sans-serif;
+  font-weight:700;
+  font-size:14.5px;
+  margin:0 0 4px;
+}
+.step-desc{font-size:13px;color:var(--muted);margin:0;line-height:1.4;}
+.step-line{width:40px;height:1px;background:var(--line);margin-top:17px;flex-shrink:0;}
+@media (max-width:640px){
+  .steps{align-items:flex-start;}
+  .step-line{width:20px;}
+  .step{padding:0 2px;}
+  .step-desc{font-size:11.5px;}
+}
 
   /* ---------- CONTACTO ---------- */
   footer{padding:80px 0 140px;}
@@ -358,14 +385,29 @@
   </div>
 </section>
 
-<section class="modalidad">
+<s<section class="modalidad">
   <div class="wrap">
     <span class="section-num reveal">Cómo empezamos</span>
     <h2 class="reveal">Modalidad de trabajo</h2>
-    <div class="reveal">
-      <p>Cada proceso de tesis es diferente. Por eso, primero conversamos sobre tu proyecto, el momento en el que estás y tus objetivos de trabajo.</p>
-      <p>A partir de ahí, definimos una modalidad de acompañamiento acorde a tu nivel de trabajo, los tiempos con los que contás y el tipo de seguimiento que necesitás.</p>
-      <p>Podemos trabajar por una etapa puntual o sostener un seguimiento durante todo el proceso, según lo que necesites para avanzar y llegar a la entrega.</p>
+    <p class="section-lede reveal">Cada proceso de tesis es diferente, así que armamos la modalidad a tu medida.</p>
+    <div class="steps reveal">
+      <div class="step">
+        <div class="step-num step-a">1</div>
+        <p class="step-title">Conversamos</p>
+        <p class="step-desc">Tu proyecto y en qué momento estás</p>
+      </div>
+      <div class="step-line"></div>
+      <div class="step">
+        <div class="step-num step-b">2</div>
+        <p class="step-title">Definimos</p>
+        <p class="step-desc">La modalidad según tus tiempos</p>
+      </div>
+      <div class="step-line"></div>
+      <div class="step">
+        <div class="step-num step-a">3</div>
+        <p class="step-title">Arrancamos</p>
+        <p class="step-desc">Puntual o durante todo el proceso</p>
+      </div>
     </div>
   </div>
 </section>
