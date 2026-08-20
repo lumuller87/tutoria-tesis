@@ -253,7 +253,48 @@
   .step{padding:0 2px;}
   .step-desc{font-size:11.5px;}
 }
-
+  /* ---------- FAQ chat ---------- */
+  .faq h2{text-align:center;}
+  .faq .section-lede{text-align:center;margin-left:auto;margin-right:auto;}
+  .thread{display:flex;flex-direction:column;gap:22px;margin-top:36px;}
+  .exchange{display:flex;flex-direction:column;gap:8px;}
+  .faq-bubble{
+    align-self:flex-start;
+    background:#CFE8B0;
+    color:#2B3A1C;
+    border-radius:16px 16px 16px 4px;
+    padding:12px 16px;
+    max-width:78%;
+    font-size:15px;
+    font-weight:500;
+  }
+  .faq-reply{
+    align-self:flex-end;
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:16px 16px 4px 16px;
+    padding:12px 16px;
+    max-width:78%;
+    display:flex;
+    gap:9px;
+    align-items:flex-start;
+  }
+  .faq-avatar{
+    width:24px;height:24px;border-radius:50%;
+    background:var(--olive-dark);color:#fff;
+    display:flex;align-items:center;justify-content:center;
+    font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:10.5px;
+    flex-shrink:0;margin-top:1px;
+  }
+  .faq-reply p{
+    margin:0;
+    font-size:14.5px;
+    color:var(--muted);
+    max-width:40ch;
+  }
+  @media (max-width:640px){
+    .faq-bubble,.faq-reply{max-width:88%;}
+  }
   /* ---------- CONTACTO ---------- */
   footer{padding:80px 0 140px;}
   footer .section-lede{margin-bottom:36px;}
@@ -409,7 +450,48 @@
     </div>
   </div>
 </section>
-
+<section class="faq">
+  <div class="wrap">
+    <h2 class="reveal">¿Te está pasando esto?</h2>
+    <div class="thread">
+      <div class="exchange reveal">
+        <div class="faq-bubble">Llevo semanas mirando la pantalla y no logro avanzar ni una página.</div>
+        <div class="faq-reply">
+          <span class="faq-avatar">L</span>
+          <p>Rompemos ese bloqueo con pasos chicos y concretos: no hace falta escribir todo, solo el siguiente paso.</p>
+        </div>
+      </div>
+      <div class="exchange reveal">
+        <div class="faq-bubble">Entre laburo, cursada y todo lo demás, no me queda tiempo para la tesis.</div>
+        <div class="faq-reply">
+          <span class="faq-avatar">L</span>
+          <p>Armamos una rutina realista de 2-3 horas semanales que sí podés sostener, en vez de un plan imposible.</p>
+        </div>
+      </div>
+      <div class="exchange reveal">
+        <div class="faq-bubble">Tengo archivos, ideas y anotaciones por todos lados y no sé ni qué tengo.</div>
+        <div class="faq-reply">
+          <span class="faq-avatar">L</span>
+          <p>Ordenamos todo el material en un esquema claro, así sabés qué tenés y qué falta.</p>
+        </div>
+      </div>
+      <div class="exchange reveal">
+        <div class="faq-bubble">Estoy solo/a con la tesis y siento que nadie me banca en el proceso.</div>
+        <div class="faq-reply">
+          <span class="faq-avatar">L</span>
+          <p>Funciono como ese sostén semanal: alguien con quien chequear avances y dudas, aunque sea un ratito.</p>
+        </div>
+      </div>
+      <div class="exchange reveal">
+        <div class="faq-bubble">Somos un grupo y cada uno tira para un lado distinto.</div>
+        <div class="faq-reply">
+          <span class="faq-avatar">L</span>
+          <p>Ayudo a ordenar roles y plazos compartidos, para que todos remen para el mismo lado.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 <footer>
   <div class="wrap">
     <span class="section-num reveal">Empecemos</span>
