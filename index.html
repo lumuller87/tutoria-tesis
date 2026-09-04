@@ -353,7 +353,7 @@
   <span class="blob blob-2"></span>
   <div class="wrap hero-inner">
     <p class="eyebrow">Acompañamiento de tesis</p>
-    <h1>Un espacio para<br>escribir y <span class="type-word" id="typeword"><span class="cursor"></span></span></h1>
+    <h1>Un espacio para<br>escribir y <span class="type-word" id="typeword"><span class="cursor"></span></span>con la tesis</h1>
     <p class="lede">Seguimiento cercano y organizado para ordenar lo que tenés, trabajar sobre lo que falta y avanzar con una estrategia clara hasta terminar tu tesis.</p>
     <div class="byline">
       <span class="name">Lucía Müller</span>
@@ -518,12 +518,12 @@
  // Typewriter effect for "avanzar" (loop con pausas largas)
 (function(){
   var el = document.getElementById('typeword');
-  var word = "avanzar.";
+  var word = "avanzar";
   var i = 0;
   var typingSpeed = 110;   // velocidad al escribir (ms por letra)
   var deletingSpeed = 60;  // velocidad al borrar (ms por letra)
   var pauseAfterTyping = 3500; // cuánto queda la palabra completa antes de borrar
-  var pauseBeforeTyping = 1800; // cuánto queda vacío antes de volver a escribir
+  var pauseBeforeTyping = 1700; // cuánto queda vacío antes de volver a escribir
 
   function type(){
     if(i <= word.length){
