@@ -41,12 +41,10 @@
   a{color:inherit;}
   .wrap{max-width:var(--max);margin:0 auto;padding:0 24px;}
   .disp{font-family:'Plus Jakarta Sans',sans-serif;}
-
-  /* ---------- REVEAL ANIM ---------- */
+ 
   .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease, transform .7s ease;}
   .reveal.in-view{opacity:1;transform:translateY(0);}
-
-  /* ---------- HERO ---------- */
+ 
   header.hero{
     position:relative;
     padding:46px 0 40px;
@@ -62,7 +60,7 @@
   .blob-1{width:300px;height:300px;background:var(--olive-soft);top:-100px;right:-70px;}
   .blob-2{width:220px;height:220px;background:var(--blue-soft);bottom:-80px;left:-50px;}
   .hero-inner{position:relative;z-index:1;}
-
+ 
   .eyebrow{
     font-size:12px;
     letter-spacing:.14em;
@@ -102,7 +100,7 @@
     animation:blink 1s step-start infinite;
   }
   @keyframes blink{50%{opacity:0;}}
-
+ 
   .lede{
     font-size:19px;
     color:var(--muted);
@@ -118,7 +116,7 @@
   .byline .name{font-family:'Plus Jakarta Sans',sans-serif;font-size:19px;font-weight:700;}
   .byline .role{font-size:14px;color:var(--muted);}
   .for-whom{font-size:13px;color:var(--muted);margin:0 0 34px;}
-
+ 
   .cta-row{display:flex;flex-wrap:wrap;gap:14px;}
   .btn{
     display:inline-flex;
@@ -138,8 +136,7 @@
   .btn-ghost{color:var(--ink);border-color:var(--line);background:#fff;}
   .btn-ghost:hover{transform:translateY(-2px);border-color:var(--olive);}
   .btn svg{width:17px;height:17px;flex-shrink:0;}
-
-  /* ---------- SECTION BASE ---------- */
+ 
   section{padding:68px 0;}
   h2{
     font-family:'Plus Jakarta Sans',sans-serif;
@@ -158,8 +155,7 @@
     display:block;
   }
   .section-lede{color:var(--muted);margin:0 0 40px;max-width:56ch;}
-
-  /* ---------- PROCESO — cards ---------- */
+ 
   .proceso{background:var(--card-bg);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
   .cards{
     display:grid;
@@ -199,16 +195,14 @@
   color:var(--muted);
   line-height:1.4;
 }
-
-/* ---------- SOBRE MI ---------- */
+ 
 .about p{margin:0 0 24px;color:#3E2A20;}
 .about p:last-child{margin-bottom:0;}
 .about strong{font-weight:700;color:var(--ink);}
 @media (max-width:640px){
   .about p{margin-bottom:20px;}
 }
-
-  /* ---------- COMO TRABAJAMOS ---------- */
+ 
   .trabajo ul{list-style:none;margin:0;padding:0;}
   .trabajo li{
     display:flex;
@@ -220,8 +214,7 @@
   }
   .trabajo li:first-child{border-top:none;}
   .trabajo li svg{width:18px;height:18px;color:var(--olive);flex-shrink:0;margin-top:2px;}
-
-  /* ---------- MODALIDAD ---------- */
+ 
   .modalidad{background:var(--card-bg);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
   .modalidad p{margin:0 0 18px;color:#3E2A20;}
   .modalidad p:last-child{margin-bottom:0;}
@@ -252,7 +245,6 @@
   .step{padding:0 2px;}
   .step-desc{font-size:11.5px;}
 }
-  /* ---------- FAQ chat ---------- */
   .faq h2{text-align:center;}
   .faq .section-lede{text-align:center;margin-left:auto;margin-right:auto;}
   .thread{display:flex;flex-direction:column;gap:22px;margin-top:36px;}
@@ -294,7 +286,6 @@
   @media (max-width:640px){
     .faq-bubble,.faq-reply{max-width:88%;}
   }
-  /* ---------- CONTACTO ---------- */
   footer{padding:80px 0 140px;}
   footer .section-lede{margin-bottom:36px;}
   .contact-links{display:flex;flex-direction:column;gap:0;margin-top:12px;}
@@ -317,8 +308,7 @@
   }
   .contact-link .icn svg{width:17px;height:17px;}
   .signoff{margin-top:44px;font-size:13px;color:var(--muted);}
-
-  /* ---------- FLOATING WHATSAPP ---------- */
+ 
   .float-wa{
     position:fixed;
     right:20px;bottom:20px;
@@ -336,18 +326,23 @@
     0%,100%{box-shadow:0 10px 24px -8px rgba(85,29,24,.6), 0 0 0 0 rgba(122,46,39,.45);}
     50%{box-shadow:0 10px 24px -8px rgba(85,29,24,.6), 0 0 0 12px rgba(122,46,39,0);}
   }
-
+ 
   @media (max-width:640px){
-    header.hero{padding:64px 0 56px;}
-    section{padding:52px 0;}
+    header.hero{padding:24px 0 18px;}
+    .eyebrow{margin-bottom:10px;}
+    h1{font-size:2rem;line-height:1.15;margin-bottom:12px;}
+    .lede{font-size:16px;margin-bottom:16px;}
+    .byline{margin-bottom:4px;}
+    .for-whom{margin-bottom:16px;}
+    section{padding:40px 0;}
   .cards{grid-template-columns:1fr;gap:12px;}
-    .cta-row .btn{width:100%;justify-content:center;}
+    .cta-row .btn{width:100%;justify-content:center;padding:13px 24px;}
     footer{padding-bottom:120px;}
   }
 </style>
 </head>
 <body>
-
+ 
 <header class="hero">
   <span class="blob blob-1"></span>
   <span class="blob blob-2"></span>
@@ -359,7 +354,7 @@
       <span class="name">Lucía Müller</span>
       <span class="role">Licenciada en Trabajo Social</span>
     </div>
-    <p class="for-whom">Para estudiantes de grado y posgrado de cualquier disciplina.</p>
+    <p class="for-whom">Tesis de grado y posgrado de cualquier disciplina.</p>
     <div class="cta-row">
       <a class="btn btn-primary" href="https://wa.me/5493492528757" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.52 0-10 4.48-10 10 0 1.77.46 3.45 1.27 4.9L2 22l5.25-1.38c1.4.76 3 1.2 4.79 1.2 5.52 0 10-4.48 10-10s-4.48-10-10-10zm0 18.2c-1.6 0-3.09-.43-4.38-1.18l-.31-.18-3.1.82.83-3.02-.2-.31A8.15 8.15 0 0 1 3.8 12c0-4.55 3.7-8.24 8.24-8.24S20.28 7.45 20.28 12s-3.7 8.2-8.24 8.2zm4.5-6.13c-.25-.12-1.47-.72-1.7-.8-.23-.08-.4-.12-.56.13-.17.25-.65.8-.8.96-.15.17-.3.19-.55.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.39-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.44.12-.15.16-.25.25-.42.08-.17.04-.31-.02-.44-.06-.12-.56-1.35-.77-1.85-.2-.48-.4-.42-.56-.42-.14 0-.31-.02-.48-.02-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1s.9 2.44 1.02 2.6c.12.17 1.77 2.7 4.28 3.79.6.26 1.06.41 1.43.53.6.19 1.14.16 1.57.1.48-.07 1.47-.6 1.68-1.18.2-.58.2-1.08.14-1.18-.06-.1-.23-.16-.48-.28z"/></svg>
@@ -371,7 +366,7 @@
     </div>
   </div>
 </header>
-
+ 
 <section class="proceso">
   <div class="wrap">
     <h2 class="reveal">Proceso</h2>
@@ -400,7 +395,7 @@
 </div>
   </div>
 </section>
-
+ 
 <section class="about">
   <div class="wrap">
     <h2 class="reveal">Sobre mí</h2>
@@ -411,7 +406,7 @@
     </div>
   </div>
 </section>
-
+ 
 <section class="trabajo">
   <div class="wrap">
     <span class="section-num reveal">Cómo trabajamos</span>
@@ -509,22 +504,21 @@
     <p class="signoff reveal">Lucía Müller — Acompañamiento de Tesis</p>
   </div>
 </footer>
-
+ 
 <a class="float-wa" href="https://wa.me/5493492528757" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
   <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.52 0-10 4.48-10 10 0 1.77.46 3.45 1.27 4.9L2 22l5.25-1.38c1.4.76 3 1.2 4.79 1.2 5.52 0 10-4.48 10-10s-4.48-10-10-10zm0 18.2c-1.6 0-3.09-.43-4.38-1.18l-.31-.18-3.1.82.83-3.02-.2-.31A8.15 8.15 0 0 1 3.8 12c0-4.55 3.7-8.24 8.24-8.24S20.28 7.45 20.28 12s-3.7 8.2-8.24 8.2zm4.5-6.13c-.25-.12-1.47-.72-1.7-.8-.23-.08-.4-.12-.56.13-.17.25-.65.8-.8.96-.15.17-.3.19-.55.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.39-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.44.12-.15.16-.25.25-.42.08-.17.04-.31-.02-.44-.06-.12-.56-1.35-.77-1.85-.2-.48-.4-.42-.56-.42-.14 0-.31-.02-.48-.02-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1s.9 2.44 1.02 2.6c.12.17 1.77 2.7 4.28 3.79.6.26 1.06.41 1.43.53.6.19 1.14.16 1.57.1.48-.07 1.47-.6 1.68-1.18.2-.58.2-1.08.14-1.18-.06-.1-.23-.16-.48-.28z"/></svg>
 </a>
-
+ 
 <script>
- // Typewriter effect for "avanzar" (loop con pausas largas)
 (function(){
   var el = document.getElementById('typeword');
   var word = "avanzar";
   var i = 0;
-  var typingSpeed = 110;   // velocidad al escribir (ms por letra)
-  var deletingSpeed = 60;  // velocidad al borrar (ms por letra)
-  var pauseAfterTyping = 3500; // cuánto queda la palabra completa antes de borrar
-  var pauseBeforeTyping = 1700; // cuánto queda vacío antes de volver a escribir
-
+  var typingSpeed = 110;
+  var deletingSpeed = 60;
+  var pauseAfterTyping = 3500;
+  var pauseBeforeTyping = 1700;
+ 
   function type(){
     if(i <= word.length){
       el.innerHTML = word.slice(0,i) + '<span class="cursor"></span>';
@@ -534,7 +528,7 @@
       setTimeout(erase, pauseAfterTyping);
     }
   }
-
+ 
   function erase(){
     if(i > 0){
       i--;
@@ -544,11 +538,10 @@
       setTimeout(type, pauseBeforeTyping);
     }
   }
-
+ 
   setTimeout(type, 400);
 })();
-
-  // Scroll reveal
+ 
   (function(){
     var items = document.querySelectorAll('.reveal');
     var obs = new IntersectionObserver(function(entries){
@@ -562,6 +555,6 @@
     items.forEach(function(item){ obs.observe(item); });
   })();
 </script>
-
+ 
 </body>
 </html>
